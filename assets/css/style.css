@@ -186,14 +186,18 @@ body.dark-theme {
 
 .main {
   overflow: hidden; /* For animation ScrollReveal */
+  max-width: 100vw;
 }
 
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   top: 0;
   left: 0;
+  right: 0;
   background-color: rgba(255, 255, 255, .9);
   z-index: var(--z-fixed);
   transition: box-shadow .4s, background-color .4s;
@@ -205,6 +209,7 @@ body.dark-theme {
   justify-content: space-between;
   align-items: center;
 }
+
 
 .nav__logo,
 .nav__toggle,
